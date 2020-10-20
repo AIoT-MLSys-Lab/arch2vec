@@ -204,7 +204,7 @@ bash plot_scripts/drawfig5-nas101.sh # visualization on nasbench-101
 bash plot_scripts/drawfig5-nas201.sh # visualization on nasbench-201
 bash plot_scripts/drawfig5-darts.sh  # visualization on darts
 ```
-the plots will be saved in `./graphvisualization`.
+The plots will be saved in `./graphvisualization`.
 
 ### Plot distribution of L2 distance by edit distance
 Install  **[nas_benchmarks](https://github.com/automl/nas_benchmarks)** and download **[nasbench_full.tfrecord](https://storage.googleapis.com/nasbench/nasbench_full.tfrecord)** under the same directory.
