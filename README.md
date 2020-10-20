@@ -216,8 +216,8 @@ python plot_scripts/pearson_plot_fig2.py
 
 
 
-# Citing this work
-If you find our work useful, please consider cite our paper:
+# Citation
+If you find this useful for your work, please consider citing:
 ```
 @InProceedings{yan2020arch,
   title = {Does Unsupervised Architecture Representation Learning Help Neural Architecture Search?},
