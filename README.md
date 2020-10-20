@@ -112,7 +112,7 @@ ImageNet-16-120: ./run_scripts/run_reinforce_arch2vec_nasbench201_ImageNet.sh
 ```
 
 
-###Run experiments of BO search on NAS-Bench-201
+### Run experiments of BO search on NAS-Bench-201
 ```bash
 CIFAR-10: ./run_scripts/run_bo_arch2vec_nasbench201_cifar10_valid.sh
 CIFAR-100: ./run_scripts/run_bo_arch2vec_nasbench201_cifar100.sh
@@ -216,7 +216,7 @@ python plot_scripts/pearson_plot_fig2.py
 
 
 
-## 6. Citing this work
+# Citing this work
 If you find our work useful, please consider cite our paper:
 ```
 @InProceedings{yan2020arch,
@@ -230,7 +230,3 @@ If you find our work useful, please consider cite our paper:
 
 
 
-
-
-
-# nips2020_code
