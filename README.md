@@ -6,7 +6,8 @@ Code for paper:
 
 <p align="center">
   <img src="docs/arch.png" alt="arch2vec" width="90%"> \
-  <b> Top: </b> The supervision signal for representation learning comes from the accuracies of architectures selected by the search strategies. <b> Bottom (ours): </b> Disentangling architecture representation learning and architecture search through unsupervised pre-training. 
+  <b> Top: </b> The supervision signal for representation learning comes from the accuracies of architectures selected by the search strategies. \
+  <b> Bottom (ours): </b> Disentangling architecture representation learning and architecture search through unsupervised pre-training. 
 </p>
 
 The repository is built upon **[pytorch_geometric](https://github.com/rusty1s/pytorch_geometric)**, **[pybnn](https://github.com/automl/pybnn)**, **[nas_benchmarks](https://github.com/automl/nas_benchmarks)**, **[bananas](https://github.com/naszilla/bananas)**. 
