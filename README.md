@@ -8,6 +8,7 @@ The repository is built upon **[pytorch_geometric](https://github.com/rusty1s/py
 
 <p align="center">
   <img src="docs/arch.png" alt="arch2vec" width="48%">
+  <b> Top: </b> The supervision signal for representation learning comes from the accuracies of architectures selected by the search strategies. <b> Bottom (ours): </b> Disentangling architecture representation learning and architecture search through unsupervised pre-training. 
 </p>
 
 ## 1. Requirements
