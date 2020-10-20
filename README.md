@@ -5,8 +5,8 @@ Code for paper:
 > _NeurIPS 2020_.
 
 <p align="center">
-  <img src="docs/arch.png" alt="arch2vec" width="90%"> \
-  <b> Top: </b> The supervision signal for representation learning comes from the accuracies of architectures selected by the search strategies. \
+  <img src="docs/arch.png" alt="arch2vec" width="90%"> <br />
+  <b> Top: </b> The supervision signal for representation learning comes from the accuracies of architectures selected by the search strategies. <br />
   <b> Bottom (ours): </b> Disentangling architecture representation learning and architecture search through unsupervised pre-training. 
 </p>
 
