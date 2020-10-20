@@ -1,6 +1,6 @@
 # Does Unsupervised Architecture Representation Learning Help Neural Architecture Search?
 Code for paper:
-> **[Does Unsupervised Architecture Representation Learning Help Neural Architecture Search?](https://arxiv.org/abs/2006.06936)**\
+> [Does Unsupervised Architecture Representation Learning Help Neural Architecture Search?](https://arxiv.org/abs/2006.06936)\
 > Shen Yan, Yu Zheng, Wei Ao, Xiao Zeng, Mi Zhang.\
 > _NeurIPS 2020_.
 
@@ -9,7 +9,7 @@ Code for paper:
   <b> Top: </b> The supervision signal for representation learning comes from the accuracies of architectures selected by the search strategies. <b> Bottom (ours): </b> Disentangling architecture representation learning and architecture search through unsupervised pre-training. 
 </p>
 
-The repository is built upon **[pytorch_geometric](https://github.com/rusty1s/pytorch_geometric)**, **[pybnn](https://github.com/automl/pybnn)**, **[nas_benchmarks](https://github.com/automl/nas_benchmarks)**, **[bananas](https://github.com/naszilla/bananas)**. 
+The repository is built upon [pytorch_geometric](https://github.com/rusty1s/pytorch_geometric), [pybnn](https://github.com/automl/pybnn), [nas_benchmarks](https://github.com/automl/nas_benchmarks), [bananas](https://github.com/naszilla/bananas). 
 
 ## 1. Requirements
 - NVIDIA GPU, Linux, Python3
@@ -20,7 +20,7 @@ pip install -r requirements.txt
 ## 2. Experiments on NAS-Bench-101 
 ### Dataset preparation on NAS-Bench-101
 
-Install **[nasbench](https://github.com/google-research/nasbench)** and download **[nasbench_only108.tfrecord](https://storage.googleapis.com/nasbench/nasbench_only108.tfrecord)** in `./data` folder.
+Install [nasbench](https://github.com/google-research/nasbench) and download [nasbench_only108.tfrecord](https://storage.googleapis.com/nasbench/nasbench_only108.tfrecord) in `./data` folder.
 
 ```bash
 python preprocessing/gen_json.py
@@ -42,7 +42,7 @@ bash run_scripts/extract_arch2vec.sh
 
 The extracted arch2vec will be saved in `./pretrained/dim-16/`.
 
-Alternatively, you can download the pretrained **[arch2vec-nasbench101.pt](https://drive.google.com/file/d/16GnqqrN46PJWl8QnES83WY3W58NUhgCr/view?usp=sharing)** on NAS-Bench-101.
+Alternatively, you can download the pretrained [arch2vec-nasbench101.pt](https://drive.google.com/file/d/16GnqqrN46PJWl8QnES83WY3W58NUhgCr/view?usp=sharing) on NAS-Bench-101.
 
 
 ### Run experiments of RL search on NAS-Bench-101 
@@ -78,7 +78,7 @@ python plot_scipts/plot_nasbench101_comparison.py
 ```
 
 ### Plot CDF comparison curve on NAS-Bench-101:
-Download the search results from **[search_logs](https://drive.google.com/drive/u/1/folders/1FKZghhBX0-gVNcQpzYjMShOH7mdkfwC1)**.
+Download the search results from [search_logs](https://drive.google.com/drive/u/1/folders/1FKZghhBX0-gVNcQpzYjMShOH7mdkfwC1).
 ```bash 
 python plot_scripts/plot_cdf.py
 ```
@@ -106,7 +106,7 @@ bash run_scripts/extract_arch2vec_nasbench_201.sh
 ```
 The extracted arch2vec will be saved in `./pretrained/dim-16/` as `cifar10_valid_converged-arch2vec-nasbench201.pt`, `cifar100-arch2vec-nasbench201.pt` and `ImageNet16_120-arch2vec-nasbench201.pt`.
 
-Alternatively, you can download the pretrained **[arch2vec](https://drive.google.com/drive/u/1/folders/16AIs4GfGNgeaHriTAICLCxIBdYE223id)** on NAS-Bench-201.
+Alternatively, you can download the pretrained [arch2vec](https://drive.google.com/drive/u/1/folders/16AIs4GfGNgeaHriTAICLCxIBdYE223id) on NAS-Bench-201.
 
 ### Run experiments of RL search on NAS-Bench-201
 ```bash
@@ -140,7 +140,7 @@ python preprocessing/gen_isomorphism_graphs.py
 ```
 Data will be saved in `./data/data_darts_counter600000.json`.
 
-Alternatively, you can download the extracted **[data_darts_counter600000.json](https://drive.google.com/file/d/1xboQV_NtsSDyOPM4H7RxtDNL-2WXo3Wr/view?usp=sharing)**.
+Alternatively, you can download the extracted [data_darts_counter600000.json](https://drive.google.com/file/d/1xboQV_NtsSDyOPM4H7RxtDNL-2WXo3Wr/view?usp=sharing).
 
 ### Pretraining
 ```bash
@@ -154,7 +154,7 @@ bash run_scripts/extract_arch2vec_darts.sh
 ```
 The extracted arch2vec will be saved in `./pretrained/dim-16/arch2vec-darts.pt`.
 
-Alternatively, you can download the pretrained **[arch2vec](https://drive.google.com/file/d/1bDZCD-XDzded6SRjDUpRV6xTINpwTNcm/view?usp=sharing)** on DARTS search space.
+Alternatively, you can download the pretrained [arch2vec](https://drive.google.com/file/d/1bDZCD-XDzded6SRjDUpRV6xTINpwTNcm/view?usp=sharing) on DARTS search space.
 
 ### Run experiments of RL search on DARTS search space
 ```bash
@@ -198,7 +198,7 @@ python darts/cnn/visualize.py arch2vec_bo
 
 ## 5. Analyzing the results 
 ### Visualize a sequence of decoded cells from the latent space
-Download pretrained supervised embeddings of **[nasbench101](https://drive.google.com/file/d/19-1gpMdXftXoH7G5929peoOnS1xKf5wN/view?usp=sharing)** and **[nasbench201](https://drive.google.com/file/d/1_Pw8MDp6ZrlI6EJ0kS3MVEz3HOSJMnIV/view?usp=sharing)**.
+Download pretrained supervised embeddings of [nasbench101](https://drive.google.com/file/d/19-1gpMdXftXoH7G5929peoOnS1xKf5wN/view?usp=sharing) and [nasbench201](https://drive.google.com/file/d/1_Pw8MDp6ZrlI6EJ0kS3MVEz3HOSJMnIV/view?usp=sharing).
 ```bash
 bash plot_scripts/drawfig5-nas101.sh # visualization on nasbench-101
 bash plot_scripts/drawfig5-nas201.sh # visualization on nasbench-201
@@ -207,7 +207,7 @@ bash plot_scripts/drawfig5-darts.sh  # visualization on darts
 The plots will be saved in `./graphvisualization`.
 
 ### Plot distribution of L2 distance by edit distance
-Install  **[nas_benchmarks](https://github.com/automl/nas_benchmarks)** and download **[nasbench_full.tfrecord](https://storage.googleapis.com/nasbench/nasbench_full.tfrecord)** under the same directory.
+Install  [nas_benchmarks](https://github.com/automl/nas_benchmarks) and download [nasbench_full.tfrecord](https://storage.googleapis.com/nasbench/nasbench_full.tfrecord) under the same directory.
 ```bash
 python plot_scripts/distance_comparison_fig3.py
 ```
@@ -219,7 +219,7 @@ python plot_scripts/drawfig4.sh
 the plots will be saved in `./density`.
 
 ### Predictive performance comparison
-Download **[predicted_results](https://drive.google.com/drive/u/1/folders/1mNlg5s3FQ8PEcgTDSnAuM6qa8ECDTzhh)** under `saved_logs/`.
+Download [predicted_accuracy](https://drive.google.com/drive/u/1/folders/1mNlg5s3FQ8PEcgTDSnAuM6qa8ECDTzhh) under `saved_logs/`.
 ```bash
 python plot_scripts/pearson_plot_fig2.py
 ```
