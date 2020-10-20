@@ -19,9 +19,8 @@ pip install -r requirements.txt
 
 ## 2. Experiments on NAS-Bench-101 
 ### Dataset preparation on NAS-Bench-101
-Install `nasbench` following the setup https://github.com/google-research/nasbench
 
-Download the `nasbench_only108.tfrecord` file from https://storage.googleapis.com/nasbench/nasbench_only108.tfrecord and save it to `./data` folder.
+Install **[nasbench](https://github.com/google-research/nasbench)** and download **[nasbench_only108.tfrecord](https://storage.googleapis.com/nasbench/nasbench_only108.tfrecord)** in `./data` folder.
 
 ```bash
 python preprocessing/gen_json.py
