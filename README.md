@@ -127,7 +127,7 @@ python ./plot_scripts/summarize_nasbench201.py
 - The corresponding table will be printed to the console
 
 
-# 4. Experiments on DARTS Search Space
+## 4. Experiments on DARTS Search Space
 - CIFAR-10 can be automatically downloaded by torchvision, ImageNet needs to be manually downloaded (preferably to a SSD) from http://image-net.org/download
 
 ### Random sampling 600,000 isomorphic graphs in DARTS space
