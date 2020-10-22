@@ -237,7 +237,7 @@ if __name__ == '__main__':
     parser.add_argument('--output_path', type=str, default='rl', help='rl/bo (default: rl)')
     parser.add_argument('--saved_arch2vec', action="store_true", default=False)
     parser.add_argument('--dataset_name', type=str, default='cifar10_valid_converged', help='Select from | cifar100 | ImageNet16_120 | cifar10_valid | cifar10_valid_converged')
-    parser.add_argument('--model_path', type=str, default='model-nasbench201-epoch-360', help='The pretrained checkpoint to be loaded')
+    parser.add_argument('--model_path', type=str, default='model-nasbench201', help='The pretrained checkpoint to be loaded')
     parser.add_argument('--EMA_momentum', type=float, default=0.95, help='EMA momentum for reward baseline')
     parser.add_argument('--MAX_BUDGET', type=float, default = 12000, help='The budget in seconds')
     parser.add_argument('--input_dim', type=int, default=7)

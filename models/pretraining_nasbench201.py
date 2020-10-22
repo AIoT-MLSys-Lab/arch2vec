@@ -27,7 +27,7 @@ def _build_dataset(dataset, list):
 
 def pretraining_gae(dataset, cfg):
     """
-    implementation of VGAE pretraining.
+    implementation of model pretraining.
     :param dataset: nas-bench-201
     :param ind_list: a set structure of indices
     :return: the number of samples to achieve global optimum
@@ -41,7 +41,7 @@ def pretraining_gae(dataset, cfg):
     epochs = args.epochs
     bs = args.bs
     loss_total = []
-    for epoch in range(0, epochs+1):
+    for epoch in range(0, epochs):
         chunks = len(X_adj_train) // bs
         if len(X_adj_train) % bs > 0:
             chunks += 1
@@ -115,7 +115,7 @@ if __name__ == '__main__':
     parser.add_argument('--data', type=str, default='data/cifar10_valid_converged.json')
     parser.add_argument('--cfg', type=int, default=4)
     parser.add_argument('--bs', type=int, default=32)
-    parser.add_argument('--epochs', type=int, default=6)
+    parser.add_argument('--epochs', type=int, default=10)
     parser.add_argument('--input_dim', type=int, default=7)
     parser.add_argument('--hidden_dim', type=int, default=128)
     parser.add_argument('--latent_dim', type=int, default=16)

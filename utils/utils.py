@@ -124,12 +124,12 @@ def get_accuracy(inputs, targets):
 
 def get_train_acc(inputs, targets):
     acc_train = get_accuracy(inputs, targets)
-    return 'training batch: acc_ops:{0:.2f}, mean_corr_adj:{1:.2f}, mean_fal_pos_adj:{2:.2f}, acc_adj:{3:.2f}'.format(*acc_train)
+    return 'training batch: acc_ops:{0:.4f}, mean_corr_adj:{1:.4f}, mean_fal_pos_adj:{2:.4f}, acc_adj:{3:.4f}'.format(*acc_train)
 
 def get_train_NN_accuracy_str(inputs, targets, decoderNN, inds):
     acc_train = get_accuracy(inputs, targets)
     acc_val = get_NN_acc(decoderNN, targets, inds)
-    return 'acc_ops:{0:.2f}({4:.2f}), mean_corr_adj:{1:.2f}({5:.2f}), mean_fal_pos_adj:{2:.2f}({6:.2f}), acc_adj:{3:.2f}({7:.2f}), top-{8} index acc {9:.2f}'.format(
+    return 'acc_ops:{0:.4f}({4:.4f}), mean_corr_adj:{1:.4f}({5:.4f}), mean_fal_pos_adj:{2:.4f}({6:.4f}), acc_adj:{3:.4f}({7:.4f}), top-{8} index acc {9:.4f}'.format(
         *acc_train, *acc_val)
 
 def get_NN_acc(decoderNN, targets, inds):

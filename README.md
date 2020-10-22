@@ -20,7 +20,7 @@ pip install -r requirements.txt
 ## 2. Experiments on NAS-Bench-101 
 ### Dataset preparation on NAS-Bench-101
 
-Install [nasbench](https://github.com/google-research/nasbench) and download [nasbench_only108.tfrecord](https://storage.googleapis.com/nasbench/nasbench_only108.tfrecord) in `./data` folder.
+Install [nasbench](https://github.com/google-research/nasbench) and download [nasbench_only108.tfrecord](https://storage.googleapis.com/nasbench/nasbench_only108.tfrecord) under `./data` folder.
 
 ```bash
 python preprocessing/gen_json.py
@@ -42,7 +42,7 @@ bash run_scripts/extract_arch2vec.sh
 
 The extracted arch2vec will be saved in `./pretrained/dim-16/`.
 
-Alternatively, you can download the pretrained [arch2vec-nasbench101.pt](https://drive.google.com/file/d/16GnqqrN46PJWl8QnES83WY3W58NUhgCr/view?usp=sharing) on NAS-Bench-101.
+Alternatively, you can download the pretrained [arch2vec](https://drive.google.com/file/d/16GnqqrN46PJWl8QnES83WY3W58NUhgCr/view?usp=sharing) on NAS-Bench-101.
 
 
 ### Run experiments of RL search on NAS-Bench-101 
@@ -87,24 +87,25 @@ python plot_scripts/plot_cdf.py
 ## 3. Experiments on NAS-Bench-201
 
 ### Dataset preparation
-Download the `NAS-Bench-201-v1_0-e61699.pth` file following https://github.com/D-X-Y/NAS-Bench-201. 
+Download the [NAS-Bench-201-v1_0-e61699.pth](https://drive.google.com/file/d/1SKW0Cu0u8-gb18zDpaAGi0f74UdXeGKs/view) under `./data` folder. 
 ```bash
 python preprocessing/nasbench201_json.py
 ```
-Data corresponding to the tree datasets in NAS-Bench-201 will be saved in folder `./data/` as `cifar10_valid_converged.json`, `cifar100.json`, `ImageNet16_120.json`.
+Data corresponding to the three datasets in NAS-Bench-201 will be saved in folder `./data/` as `cifar10_valid_converged.json`, `cifar100.json`, `ImageNet16_120.json`.
 
 ### Pretraining
 ```bash
 bash models/pretraining_nasbench201.sh
 ```
-The pretrained model will be saved in `./pretrained/dim-16/`
+The pretrained model will be saved in `./pretrained/dim-16/`.
+
 Note that the pretrained model is shared across the 3 datasets in NAS-Bench-201.
 
 ### arch2vec extraction 
 ```bash
-bash run_scripts/extract_arch2vec_nasbench_201.sh
+bash run_scripts/extract_arch2vec_nasbench201.sh
 ```
-The extracted arch2vec will be saved in `./pretrained/dim-16/` as `cifar10_valid_converged-arch2vec-nasbench201.pt`, `cifar100-arch2vec-nasbench201.pt` and `ImageNet16_120-arch2vec-nasbench201.pt`.
+The extracted arch2vec will be saved in `./pretrained/dim-16/` as `cifar10_valid_converged-arch2vec.pt`, `cifar100-arch2vec.pt` and `ImageNet16_120-arch2vec.pt`.
 
 Alternatively, you can download the pretrained [arch2vec](https://drive.google.com/drive/u/1/folders/16AIs4GfGNgeaHriTAICLCxIBdYE223id) on NAS-Bench-201.
 
@@ -242,3 +243,4 @@ If you find this useful for your work, please consider citing:
 
 
 
+# arch2vec

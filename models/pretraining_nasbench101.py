@@ -97,7 +97,7 @@ def pretraining_model(dataset, cfg, args):
         print('Ratio of valid decodings from the prior: {:.4f}'.format(validity))
         print('Ratio of unique decodings from the prior: {:.4f}'.format(len(buckets) / (validity_counter+1e-8)))
         acc_ops_val, mean_corr_adj_val, mean_fal_pos_adj_val, acc_adj_val = get_val_acc_vae(model, cfg, X_adj_val, X_ops_val, indices_val)
-        print('validation set: acc_ops:{0:.2f}, mean_corr_adj:{1:.2f}, mean_fal_pos_adj:{2:.2f}, acc_adj:{3:.2f}'.format(
+        print('validation set: acc_ops:{0:.4f}, mean_corr_adj:{1:.4f}, mean_fal_pos_adj:{2:.4f}, acc_adj:{3:.4f}'.format(
                 acc_ops_val, mean_corr_adj_val, mean_fal_pos_adj_val, acc_adj_val))
         print('epoch {}: average loss {:.5f}'.format(epoch, sum(loss_epoch)/len(loss_epoch)))
         loss_total.append(sum(loss_epoch) / len(loss_epoch))
@@ -117,8 +117,8 @@ if __name__ == '__main__':
                         help='configuration (default: 4)')
     parser.add_argument('--bs', type=int, default=32,
                         help='batch size (default: 32)')
-    parser.add_argument('--epochs', type=int, default=2,
-                        help='training epochs (default: 2)')
+    parser.add_argument('--epochs', type=int, default=8,
+                        help='training epochs (default: 8)')
     parser.add_argument('--dropout', type=float, default=0.3,
                         help='decoder implicit regularization (default: 0.3)')
     parser.add_argument('--normalize', action='store_true', default=True,
