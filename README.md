@@ -215,7 +215,7 @@ python plot_scripts/distance_comparison_fig3.py
 
 ### Latent space 2D visualization
 ```bash
-python plot_scripts/drawfig4.sh
+bash plot_scripts/drawfig4.sh
 ```
 the plots will be saved in `./density`.
 
@@ -239,3 +239,7 @@ If you find this useful for your work, please consider citing:
   year = {2020}
 }
 ```
+
+
+
+

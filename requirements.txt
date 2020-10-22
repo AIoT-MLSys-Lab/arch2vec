@@ -5,4 +5,7 @@ emcee == 3.0.2
 tqdm == 4.31.1
 networkx == 2.2
 graphviz == 0.14.2
-thop
+thop == 0.0.31.post2004101309
+texttable == 1.6.3
+python-igraph == 0.8.3
+
