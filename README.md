@@ -239,9 +239,3 @@ If you find this useful for your work, please consider citing:
   year = {2020}
 }
 ```
-
-
-
-
-# arch2vec
-# arch2vec
