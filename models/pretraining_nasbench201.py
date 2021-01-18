@@ -137,7 +137,3 @@ if __name__ == '__main__':
     print('feat dim {}'.format(args.latent_dim))
 
     pretraining_gae(dataset, cfg)
-
-
-
-

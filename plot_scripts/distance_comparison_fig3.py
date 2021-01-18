@@ -405,6 +405,3 @@ if __name__ == '__main__':
 
     EditDistance2L2Distance = random_walk(b)
     distance_compare_plot(EditDistance2L2Distance)
-
-
-

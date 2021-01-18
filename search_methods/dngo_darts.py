@@ -196,7 +196,3 @@ if __name__ == '__main__':
         exit()
     features, genotype = load_arch2vec(embedding_path)
     expected_improvement_search(features, genotype)
-
-
-
-

@@ -288,5 +288,3 @@ class DecoderNN(object):
         op_recon, adj_recon = self.ops[ind_t1_list], self.adj[ind_t1_list]
         op_recon_tk, adj_recon_tk = self.ops[ind_t1_list], self.adj[ind_t1_list]
         return op_recon, adj_recon, op_recon_tk, adj_recon_tk, ind_t1_list, ind_tk_list
-
-

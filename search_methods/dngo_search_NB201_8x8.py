@@ -185,7 +185,3 @@ if __name__ == '__main__':
         exit()
     features, valid_labels, test_labels, training_time, other_info = load_arch2vec(embedding_path)
     expected_improvement_search(features, valid_labels, test_labels, training_time, other_info)
-
-
-
-

@@ -38,4 +38,3 @@ configs = [{'GAE': # 0
                 {'method': 4, 'lbd': 1.0}
             },
            ]
-

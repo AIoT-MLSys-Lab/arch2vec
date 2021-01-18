@@ -140,7 +140,3 @@ if __name__ == '__main__':
     print('using {}'.format(args.data))
     print('feat dim {}'.format(args.dim))
     pretraining_model(dataset, cfg, args)
-
-
-
-
