@@ -4,7 +4,7 @@ sys.path.insert(0, os.getcwd())
 import numpy as np
 import time
 import torch
-import utils
+import darts.cnn.utils as utils
 import glob
 import random
 import logging
